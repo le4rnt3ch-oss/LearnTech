@@ -28,3 +28,5 @@ if (window.location.pathname.includes("main.html")) {
     window.location.href = "index.html";
   }
 }
+// For later interactivity
+console.log("LearnTech site loaded.");
