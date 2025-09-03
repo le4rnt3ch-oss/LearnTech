@@ -15,24 +15,15 @@ if (loginForm) {
 
     if (username === validUser.username && password === validUser.password) {
       localStorage.setItem("loggedIn", "true");
-      window.location.href = "dashboard.html";
+      window.location.href = "main.html"; // redirect to main site
     } else {
       document.getElementById("errorMsg").innerText = "Invalid username or password!";
     }
   });
 }
 
-// Handle Logout
-const logoutBtn = document.getElementById("logoutBtn");
-if (logoutBtn) {
-  logoutBtn.addEventListener("click", function() {
-    localStorage.removeItem("loggedIn");
-    window.location.href = "index.html";
-  });
-}
-
-// Protect Dashboard Page
-if (window.location.pathname.includes("dashboard.html")) {
+// Protect Main Page
+if (window.location.pathname.includes("main.html")) {
   if (localStorage.getItem("loggedIn") !== "true") {
     window.location.href = "index.html";
   }

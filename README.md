@@ -1,6 +1,7 @@
+# LEARNTECH
 _A Hybrid Gamified Learning Tool for Accessible and Organized Study Resources among Grade 11 ICT Students at Naga College Foundation_
 
-This is the frontend prototype with login and logout functionality.
+This is the frontend prototype with login, logout, and main site navigation.
 
 ## Test Login
 - Username: `student`
