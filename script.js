@@ -1,32 +1,22 @@
 // Simple credentials for testing
 const validUser = {
-  username: "student",
+  username: "learntech",
   password: "1234"
 };
 
-// Handle Login
-const loginForm = document.getElementById("loginForm");
-if (loginForm) {
-  loginForm.addEventListener("submit", function(e) {
-    e.preventDefault();
+// Profile dropdown toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const profileBtn = document.querySelector('.profile-btn');
+  const dropdown = document.querySelector('.dropdown');
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+  profileBtn.addEventListener('click', () => {
+    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+  });
 
-    if (username === validUser.username && password === validUser.password) {
-      localStorage.setItem("loggedIn", "true");
-      window.location.href = "main.html"; // redirect to main site
-    } else {
-      document.getElementById("errorMsg").innerText = "Invalid username or password!";
+  // Close dropdown if clicked outside
+  document.addEventListener('click', (e) => {
+    if (!profileBtn.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.style.display = 'none';
     }
   });
-}
-
-// Protect Main Page
-if (window.location.pathname.includes("main.html")) {
-  if (localStorage.getItem("loggedIn") !== "true") {
-    window.location.href = "index.html";
-  }
-}
-// For later interactivity
-console.log("LearnTech site loaded.");
+});
