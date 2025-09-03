@@ -3,23 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEARNTECH - Login</title>
+  <title>LearnTech</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
+  <!-- Navbar -->
+  <nav class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="LEARNTECH Logo">
+      <img src="logo.png" alt="LearnTech Logo">
+      <span>LearnTech</span>
     </div>
-    <h1>LEARNTECH</h1>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Modules</a></li>
+      <li><a href="#">Quizzes</a></li>
+    </ul>
+    <div class="profile">
+      <button class="profile-btn">Profile ⬇</button>
+      <div class="dropdown">
+        <a href="#">Progress</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </div>
+  </nav>
 
-    <form id="loginForm">
-      <input type="text" id="username" placeholder="Username" required>
-      <input type="password" id="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
-    <p id="errorMsg"></p>
-  </div>
-  <script src="script.js"></script>
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Hybrid Gamified Learning for <span class="highlight">Grade 11 ICT CSS</span></h1>
+      <p>LearnTech brings organized, offline-capable study resources together with a motivating gamification system—so students can learn anytime, anywhere, and see their progress grow.</p>
+      <button class="btn-primary">Explore Features</button>
+      <button class="btn-secondary">Demo: +50 XP</button>
+    </div>
+    <div class="profile-card">
+      <h3>Student Profile</h3>
+      <p><strong>Juan Dela Cruz</strong><br>Grade 11 – ICT CSS<br>ID: NHS-2025-001</p>
+      <div class="level">
+        <span>Level 2</span>
+        <div class="progress-bar"><div class="progress" style="width:60%"></div></div>
+      </div>
+      <div class="stats">
+        <div><strong>1320</strong><br>Total Points</div>
+        <div><strong>12</strong><br>Completed Lessons</div>
+      </div>
+      <div class="achievements">
+        <span class="badge">⭐ Starter</span>
+        <span class="badge">🔥 Streak 3 Days</span>
+        <span class="badge">🏆 Top</span>
+      </div>
+      <button>Solve a Quiz (+25 XP)</button>
+      <button>Finish Module</button>
+    </div>
+  </section>
+
+  <!-- Modules Section -->
+  <main>
+    <h2>Modules</h2>
+    <div class="modules">
+      <div class="card">Module 1: Basics</div>
+      <div class="card">Module 2: Intermediate</div>
+      <div class="card">Module 3: Advanced</div>
+    </div>
+  </main>
 </body>
 </html>
