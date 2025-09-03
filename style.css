@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("background.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 320px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#errorMsg {
+  color: red;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 15px;
+}
