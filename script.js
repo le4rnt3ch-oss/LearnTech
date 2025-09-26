@@ -1,7 +1,7 @@
 <body>
   <!-- Login form -->
   <div id="login-box">
-    <h2>LearnTech Login</h2>
+    <h2>TechTuro Login</h2>
     <input type="text" id="username" placeholder="Username e.g., admin">
     <input type="password" id="password" placeholder="Password e.g., 1234">
     <button onclick="login()">Login</button>
