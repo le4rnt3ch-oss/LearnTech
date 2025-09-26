@@ -73,31 +73,31 @@
     .module-card h3 { margin-top: 0; font-size: 2rem; }
     .module-card p { font-size: 1.2rem; color: var(--muted); }
 
-    .quiz-section { background-color: var(--card); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); margin-top: 40px; }
+    .games-section { background-color: var(--card); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); margin-top: 40px; }
   </style>
 </head>
 <body>
 
   <div id="loginPage" class="login-container">
     <div class="login-box">
-      <h2>LearnTech Login</h2>
+      <h2>TechTuro Login</h2>
       <input type="text" id="username" placeholder="Username e.g., admin">
       <input type="password" id="password" placeholder="Password e.g., 1234">
       <button onclick="login()">Login</button>
       <div class="demo-credentials">
         <p>Demo credentials:</p>
-        <p>Username: admin | Password: 1234</p>
+        <p>Username: TechTuro | Password: LearnTech</p>
       </div>
     </div>
   </div>
 
   <div id="mainPage" style="display:none;">
     <header class="navbar">
-      <div class="logo">LearnTech</div>
+      <div class="logo">TechTuro</div>
       <div class="nav-links">
         <a href="#">Home</a>
         <a href="#">Modules</a>
-        <a href="#quiz">Quiz</a>
+        <a href="#quiz">Games</a>
         <a href="mailto:contact@learntech.com">Contact</a>
         <div class="profile" onclick="toggleProfile()">
           <div class="profile-circle">JD</div>
@@ -159,8 +159,8 @@
       <div class="modules-column">
         <div class="intro-section">
           <div class="intro-content">
-            <h1>Welcome to LearnTech!</h1>
-            <p>LearnTech is your online learning platform where students can explore educational modules, complete interactive lessons, earn points for achievements, and track their learning progress seamlessly.</p>
+            <h1>Welcome to TechTuro!</h1>
+            <p>TechTuro is your online learning platform where students can explore educational modules, complete interactive lessons, earn points for achievements, and track their learning progress seamlessly.</p>
             <div class="intro-buttons">
               <button onclick="alert('You earned 50 XP for explore!')">Explore</button>
               <button onclick="alert('You earned 50 XP for demo!')">Demo for 50 XP</button>
